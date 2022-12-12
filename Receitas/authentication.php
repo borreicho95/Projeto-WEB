@@ -3,7 +3,7 @@
     $username = $_POST['user'];  
     $password = $_POST['pass'];  
       
-        //to prevent from mysqli injection  
+        //impedir mysqli injection 
         $username = stripcslashes($username);  
         $password = stripcslashes($password);  
         $username = mysqli_real_escape_string($con, $username);  
@@ -15,7 +15,7 @@
         $count = mysqli_num_rows($result);  
           
         if($count == 1){  
-            echo "<h1><center> Login feito com sucesso </center></h1>";  
+            header('Location: receitas.php'); 
         }  
         else{  
             echo "<h1> Login falhado. Username ou password errados.</h1>";  
