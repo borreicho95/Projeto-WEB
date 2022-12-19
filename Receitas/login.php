@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
+<?php
+    include 'model.php';
 
-<script src="validation.js"></script>
+    session_start();
+	
+    if( !empty( $_POST['username'])) {
+        $username = $_POST['username'];
 
-<div id = "frm">  
-        <h1>Login</h1>  
-        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
-            <p>  
-                <label> UserName: </label>  
-                <input type = "text" id ="user" name  = "user" />  
-            </p>  
-            <p>  
-                <label> Password: </label>  
-                <input type = "password" id ="pass" name  = "pass" />  
-            </p>  
-            <p>     
-                <input type =  "submit" id = "btn" value = "Login" />  
-            </p>  
-        </form>  
-    </div>   
+        $_SESSION['username'] = $username;
 
+        if( ! usernameExists( $username ) )
+            adicionarUser( $username );
+    }
     
-</body>
-</html>
+    header('Location: main_Receitas.php');
+?>
