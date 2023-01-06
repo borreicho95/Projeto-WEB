@@ -18,30 +18,18 @@
           <div class="dropdown-content">
             <div class="row">
             <div class="column">
-        
+            <a href="/Aulas/Exercicios/Aula1/Receita.html">Pão e Bolos</a>
             </div>
             </div>
             </div>
             </div>
             <div class="search-container">
             <form action="">
-            <input type="text" placeholder="Search.." name="search">
+            <input type="text" placeholder="Procurar.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
             </form>
             </div>
-            <?php 
-            if( empty( $username) ) :
-        ?>
-            <form action="login.php" method="post">
-                <input type="text" name="username" placeholder="Username" />
-                <input type="submit" value="Login" />      
-            </form>
-        <?php else : ?>
-            <div>    
-                <span><?= $username; ?></span>
-                <a href="logout.php">Logout</a>    
-            </div>
-        <?php endif; ?>
+        
 </div>
 
 </body>
