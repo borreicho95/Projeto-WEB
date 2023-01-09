@@ -1,3 +1,8 @@
+<?php
+  require ('model.php');
+
+  $categorias = getCategorias();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +23,14 @@
           <div class="dropdown-content">
             <div class="row">
             <div class="column">
-            <a href="/Aulas/Exercicios/Aula1/Receita.html">Pão e Bolos</a>
+            <?php
+            /*
+            Fazer um ciclo while com um contador que apos 6 categorias crie uma nova coluna
+            */
+              foreach ($categorias as $categoria){
+                echo '<a>'.$categoria.'</a>';
+              }
+            ?>
             </div>
             </div>
             </div>

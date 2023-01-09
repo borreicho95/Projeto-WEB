@@ -4,7 +4,7 @@
 {
      // Deviam estar num ficheiro de configuração
     $hostname = "localhost";
-    $databasename = "Site_Receitas";
+    $databasename = "site receitas";
     $username = "root";
     $password = "";
     
@@ -32,6 +32,20 @@ function getReceitas()
   $receitas = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
 
   return $receitas;
+}
+
+/*
+    Devolve todas as categorias que existem
+*/
+function getCategorias()
+{
+  $conexao = estabelerConexao();
+
+  $stmt = $conexao->query('Select * From categorias');
+
+  $categorias = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+
+  return $categorias;
 }
 
 /* 
