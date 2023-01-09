@@ -14,4 +14,6 @@ INSERT INTO `tempo`(`id_tempo`, `time`) VALUES
 (3, '45m'),
 (4, '1h'),
 (5, '1h15m'),
-(6, '1h30m');
+(6, '1h30m')
+(7, '1h45m')
+(8, '2h');
