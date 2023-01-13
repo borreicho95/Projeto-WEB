@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS `receitas` (
     `id_receita` INT(5) NOT NULL,
     `Nome Receita` varchar(40) NOT NULL,
     `Nome do utilizador` varchar(20) NOT NULL,
-    `Data` datetime,
+    `Data` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `Descrição` varchar(1000) NOT NULL,
     `Número de pessoas` INT(2) NOT NULL,
     `id_tempo` int(2) NOT NULL,
@@ -44,4 +44,4 @@ CREATE TABLE IF NOT EXISTS `receitas` (
     FOREIGN KEY (`id_tempo`) References tempo(`id_tempo`),
     FOREIGN KEY (`id_dificuldade`) References dificuldade(`id_dificuldade`),
     FOREIGN KEY (`id_categoria`) References categorias(`id_categoria`)
-) ENGINE=InnoDB CHARSET=utf8
+) ENGINE=InnoDB CHARSET=utf8;
