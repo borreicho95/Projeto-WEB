@@ -107,4 +107,20 @@ function removerLike($username, $idReceita ) {
     $stmt->execute( [ 'username' => $username, 'id_receita' => $idReceita] );
 }
 
- ?>
+ 
+
+ /*
+    Verifica quantas linhas existem na tabela categorias
+ */
+function getNumbCategorias()
+{
+  $conexao = estabelerConexao();
+
+  $stmt = $conexao->query('Select count(categoria) from categorias');
+
+  $numbCategorias = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+
+  return $numbCategorias;
+}
+
+?>

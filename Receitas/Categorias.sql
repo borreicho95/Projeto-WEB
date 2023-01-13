@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS `categorias` (
     `id_categoria` INT(2) NOT NULL,
     `categoria` varchar(30) NOT NULL,
     PRIMARY KEY (`id_categoria`)
-) ENGINE=InnoDB CHARSET=utf8
+) ENGINE=InnoDB CHARSET=utf8;
 
 --
 -- Inserção de registos de Utilizadores

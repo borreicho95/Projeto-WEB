@@ -2,6 +2,7 @@
   require ('model.php');
 
   $categorias = getCategorias();
+  $numbCategorias = getNumbCategorias();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,9 +28,17 @@
             /*
             Fazer um ciclo while com um contador que apos 6 categorias crie uma nova coluna
             */
-              foreach ($categorias as $categoria){
-                echo '<a>'.$categoria.'</a>';
-              }
+              $n = $numbCategorias;
+
+              $p = 0;
+
+              do{
+                for ($i = 1; $i > 6; $i++) {
+                  echo $categorias;
+                  $p++;
+                  if ($p >= $n) {break;}
+                }
+              } while ($p < $n)
             ?>
             </div>
             </div>
