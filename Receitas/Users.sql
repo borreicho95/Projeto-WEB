@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `userlikes` (
 -- Inserção de registos de utilizadores`
 --
 INSERT INTO `users` (`username`) VALUES
-('antrob')
+('antrob'),
 ('bujibuji'),
 ('roni');
 
