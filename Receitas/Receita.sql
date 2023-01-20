@@ -40,17 +40,19 @@ CREATE TABLE IF NOT EXISTS `receitas` (
     `foto8` varchar(100) NOT NULL,
     `foto9` varchar(100) NOT NULL,
     `foto10` varchar(100) NOT NULL,
+    `foto11` varchar(100) NOT NULL,
     PRIMARY KEY (`id_receita`),
     FOREIGN KEY (`id_tempo`) References tempo(`id_tempo`),
     FOREIGN KEY (`id_dificuldade`) References dificuldade(`id_dificuldade`),
     FOREIGN KEY (`id_categoria`) References categorias(`id_categoria`)
 ) ENGINE=InnoDB CHARSET=utf8;
-INSERT into `receitas` (`id_receita`,`Nome Receita`,`Nome do utilizador`,`Descrição`,`Número de pessoas`,`id_tempo`,`id_dificuldade`,`ingrediente1`,`ingrediente2`,`ingrediente3`,`ingrediente4`,`ingrediente5`,`ingrediente6`,`ingrediente7`,`ingrediente8`,`ingrediente9`,`ingrediente10`,`preparação1`,`preparação2`,`preparação3`,`preparação4`,`preparação5`,`preparação6`,`preparação7`,`preparação8`,`preparação9`,`preparação10`,`id_categoria`,`foto_main`,`foto1`,`foto2`,`foto3`,`foto4`,`foto5`,`foto6`,`foto7`,`foto8`,`foto9`,`foto10`) VALUES
+
+INSERT into `receitas` (`id_receita`,`Nome Receita`,`Nome do utilizador`,`Data`,`Descrição`,`Número de pessoas`,`id_tempo`,`id_dificuldade`,`ingrediente1`,`ingrediente2`,`ingrediente3`,`ingrediente4`,`ingrediente5`,`ingrediente6`,`ingrediente7`,`ingrediente8`,`ingrediente9`,`ingrediente10`,`preparação1`,`preparação2`,`preparação3`,`preparação4`,`preparação5`,`preparação6`,`preparação7`,`preparação8`,`preparação9`,`preparação10`,`id_categoria`,`foto_main`,`foto1`,`foto2`,`foto3`,`foto4`,`foto5`,`foto6`,`foto7`,`foto8`,`foto9`,`foto10`,`foto11`) VALUES
 (1,
  'Folhados de salsicha simples',
  'João Felício',
- 'folhados de salsicha é aquele lanche clássico que toda a gente gosta, principalmente as crianças.
-Com uma massa fofinha, o nosso folhado de salsicha simples vai fazer sucesso servido como lanche no dia a dia ou na festa de aniversário dos filhos. Essa receita rende até 12 folhados e fica perfeito servido com molhos.',
+ CURRENT_TIMESTAMP,
+ 'folhados de salsicha é aquele lanche clássico que toda a gente gosta, principalmente as crianças. Com uma massa fofinha, o nosso folhado de salsicha simples vai fazer sucesso servido como lanche no dia a dia ou na festa de aniversário dos filhos. Essa receita rende até 12 folhados e fica perfeito servido com molhos.',
  6,
  6,
  1,
