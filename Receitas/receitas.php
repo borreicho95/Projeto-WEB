@@ -3,7 +3,7 @@
 require ('model.php');
 $categorias = getCategorias();
 
-$idCat = $_GET['idCat'];
+$idCategorias = $_GET['idCat'];
 
 $nameCat = $_GET['nameCat'];
 
@@ -33,7 +33,7 @@ $nameCat = $_GET['nameCat'];
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria <= 6 ) {
-                  echo "<a href='receitas.php?idCat=$idCat&nameCat=$categoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCategoria&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -45,7 +45,7 @@ $nameCat = $_GET['nameCat'];
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria >= 7 && $idCategoria <= 12 ) {
-                  echo "<a href='receitas.php?idCat=$idCat&nameCat=$categoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCategoria&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -57,7 +57,7 @@ $nameCat = $_GET['nameCat'];
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria >= 13 ) {
-                  echo "<a href='receitas.php?idCat=$idCat&nameCat=$categoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCategoria&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -77,8 +77,7 @@ $nameCat = $_GET['nameCat'];
 </div>
 
 
-<? echo $idCat; ?>
-<? echo $nameCat; ?>
+<div></div>
 
 </body>
 </html>
