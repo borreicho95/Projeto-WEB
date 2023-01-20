@@ -1,7 +1,11 @@
 <?php
 
 require ('model.php');
-$idCategoria = $_GET['idcat'];
+$categorias = getCategorias();
+
+$idCat = $_GET['idCat'];
+
+$nameCat = $_GET['nameCat'];
 
 ?>
 
@@ -11,13 +15,15 @@ $idCategoria = $_GET['idcat'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <?php echo '<title>'.$nameCat.'</title>'; ?>
+    <link rel="stylesheet" href="receitas.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
 <div class="navbar">
-        <a href="/Receitas/main_Receitas">Inicio</a> 
-        <a href="/Receitas/receitas">Receitas</a>
+        <a href="/Aulas/Projeto-WEB/Receitas/main_Receitas.php">Inicio</a> 
+        <a href="/Aulas/Projeto-WEB/Receitas/categorias.php">Receitas</a>
         <div class="dropdown">
           <button class="dropbtn">Categorias</button> 
           <div class="dropdown-content">
@@ -27,7 +33,7 @@ $idCategoria = $_GET['idcat'];
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria <= 6 ) {
-                  echo "<a href='receitas.php?idcat=$idCategoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCat&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -39,7 +45,7 @@ $idCategoria = $_GET['idcat'];
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria >= 7 && $idCategoria <= 12 ) {
-                  echo "<a href='receitas.php?idcat=$idCategoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCat&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -51,7 +57,7 @@ $idCategoria = $_GET['idcat'];
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria >= 13 ) {
-                  echo "<a href='receitas.php?idcat=$idCategoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCat&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -70,7 +76,9 @@ $idCategoria = $_GET['idcat'];
         
 </div>
 
-<? echo $idCategoria; ?>
+
+<? echo $idCat; ?>
+<? echo $nameCat; ?>
 
 </body>
 </html>

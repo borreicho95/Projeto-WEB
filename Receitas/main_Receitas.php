@@ -1,4 +1,5 @@
 <?php
+
   require ('model.php');
 
   $categorias = getCategorias();
@@ -16,8 +17,8 @@
 <body>
     
 <div class="navbar">
-        <a href="/Receitas/main_Receitas">Inicio</a> 
-        <a href="/Receitas/receitas">Receitas</a>
+        <a href="/Aulas/Projeto-WEB/Receitas/main_Receitas.php">Inicio</a> 
+        <a href="/Aulas/Projeto-WEB/Receitas/categorias.php">Receitas</a>
         <div class="dropdown">
           <button class="dropbtn">Categorias</button> 
           <div class="dropdown-content">
@@ -27,7 +28,7 @@
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria <= 6 ) {
-                  echo "<a href='receitas.php?idcat=$idCategoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCategoria&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -39,7 +40,7 @@
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria >= 7 && $idCategoria <= 12 ) {
-                  echo "<a href='receitas.php?idcat=$idCategoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCategoria&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
@@ -51,7 +52,7 @@
               
               foreach ($categorias as $idCategoria => $categoria) {
                 if ($idCategoria >= 13 ) {
-                  echo "<a href='receitas.php?idcat=$idCategoria' >".$categoria.'</a>';
+                  echo "<a href='receitas.php?idCat=$idCategoria&nameCat=$categoria' >".$categoria.'</a>';
                 }
               
               }
