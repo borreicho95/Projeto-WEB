@@ -155,4 +155,7 @@ body{
     .navbar input[type=text] {
       border: 1px solid #ccc;  
     }
+    .categorias{
+      display: inline-block;
+    }
   }

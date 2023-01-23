@@ -72,7 +72,18 @@
 </div>
 
 <div class="categorias">
-
+<a src="https://cdn0.tudoreceitas.com/pt/posts/4/8/0/enroladinho_de_salsicha_simples_11084_600.webp">
+<p>Folhado de salsisha</p>
+<p>Aperitivos e pestiscos</p>
+<a src="https://cdn0.tudoreceitas.com/pt/posts/4/8/0/enroladinho_de_salsicha_simples_11084_600.webp">
+<p>Folhado de salsisha</p>
+<p>Aperitivos e pestiscos</p>
+<a src="https://cdn0.tudoreceitas.com/pt/posts/4/8/0/enroladinho_de_salsicha_simples_11084_600.webp">
+<p>Folhado de salsisha</p>
+<p>Aperitivos e pestiscos</p>
+<a src="https://cdn0.tudoreceitas.com/pt/posts/4/8/0/enroladinho_de_salsicha_simples_11084_600.webp">
+<p>Folhado de salsisha</p>
+<p>Aperitivos e pestiscos</p>
 </div>
 
 </body>
