@@ -9,6 +9,13 @@ $idCategorias = $_GET['idCat'];
 
 $nameCat = $_GET['nameCat'];
 
+$nomeReceita = $_GET['nomeReceita'];
+
+$idReceita = $_GET['idReceita'];
+
+$tempos = getTempo();
+
+$dificuldades = getDificuldades();
 
 ?>
 
@@ -93,27 +100,41 @@ $nameCat = $_GET['nameCat'];
         
 </div>
 
-<div class="receita">
-  <h1>A Ver Receitas: <?php echo $nameCat; ?></h1>
-  <?php
+<div class="paginaReceita">
+<?php
 
-  for($i=0 ; $i < count($receitas); $i++){
-    if($receitas[$i]['id_categoria'] == $idCategorias){
-      echo '<div>
-      <picture>
-      <source srcset="'.$receitas[$i]['foto_main'].'" type="image/webp">
-      <img src="'.$receitas[$i]['foto_main'].'" alt="Receita de Arroz colorido simples">
-      </picture>
-      <div class="MiniCategoria"><i class="fa-solid fa-wheat"></i>'.$nameCat.'</div>
-      <a href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nameCat='.$nameCat.'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
-      </div>';
-    }
-  }
-  
-  
-  
-  ?>
+    $tempo = $receitas[$idReceita]['id_tempo'];
+
+    $dificuldade = $receitas[$idReceita]['id_dificuldade'];
+
+    echo '<h1>Receita de '.$receitas[$idReceita]['Nome Receita'].'</h1>';
+    echo '<div>
+          <h3>'.$receitas[$idReceita]['Nome do utilizador'].'</h3>
+          <h4>'.$receitas[$idReceita]['Data'].'</h4>
+          </div>';
+    echo '<img src="'.$receitas[$idReceita]['foto_main'].'">';
+    echo '<p>'.$receitas[$idReceita]['Descrição'].'</p>';
+    echo '<div>
+          <p><i class="fa-solid fa-users"></i>'.' '.$receitas[$idReceita]['Número de pessoas'].' '.'Convidados</p>
+          <p><i class="fa-regular fa-clock"></i>'.' '.$tempos[$tempo].' '.'</p>
+          <p><i class="fa-solid fa-layer-group"></i>'.' '.$dificuldades[$dificuldade].' '.'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente1'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente2'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente3'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente4'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente5'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente6'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente7'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente8'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente9'].'</p>
+          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente10'].'</p>
+          </div>';
+    echo '<h2>Como fazer '.$receitas[$idReceita]['Nome Receita'].'</h2>'
+    
+
+?>
 </div>
+
 
 </body>
 </html>

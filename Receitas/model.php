@@ -29,7 +29,7 @@ function getReceitas()
 
   $stmt = $conexao->query('Select * From receitas');
 
-  $receitas = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+  $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   return $receitas;
 }
@@ -43,9 +43,37 @@ function getCategorias()
 
   $stmt = $conexao->query('Select * From categorias');
 
-  $categorias = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+  $categorias = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   return $categorias;
+}
+
+/*
+    Devolve todos os tempos que existem
+*/
+function getTempo()
+{
+  $conexao = estabelerConexao();
+
+  $stmt = $conexao->query('Select * From tempo');
+
+  $tempos = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+
+  return $tempos;
+}
+
+/*
+    Devolve todas as dificuldades que existem
+*/
+function getDificuldades()
+{
+  $conexao = estabelerConexao();
+
+  $stmt = $conexao->query('Select * From dificuldade');
+
+  $dificuldades = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+
+  return $dificuldades;
 }
 
 /* 

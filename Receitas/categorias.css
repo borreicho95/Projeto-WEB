@@ -155,7 +155,33 @@ body{
     .navbar input[type=text] {
       border: 1px solid #ccc;  
     }
-    .categorias{
-      display: inline-block;
-    }
   }
+
+  .navbar { display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar { align-self: center;}
+
+.navbar form input { 
+         padding:0.5em 1em;
+         border-radius: 1em;
+         border-style: solid;
+         border-width: 1px;
+         font-size: 18px;
+        }
+
+.navbar form button { 
+         padding:0.5em 1em;
+         font-size: 17px;
+}	
+
+.receita img {
+  width: 300px;
+  height: 300px;
+}
+
+h1{
+  text-align: center;
+}

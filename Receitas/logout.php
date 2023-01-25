@@ -4,6 +4,6 @@
         
     unset($_SESSION['username'] );
 
-    header('Location: galeria.php');
+    header('Location: main_Receitas.php');
 
 ?>
