@@ -2,7 +2,8 @@ body{
     margin: 0;
   }
   
-  
+
+
   .navbar {
       overflow: hidden;
       background-color: #333;
@@ -155,4 +156,10 @@ body{
     .navbar input[type=text] {
       border: 1px solid #ccc;  
     }
+
   }
+
+  .receita {
+    text-align: center;
+  }
+
