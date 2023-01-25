@@ -102,7 +102,7 @@ $nameCat = $_GET['nameCat'];
       echo '<div>
       <picture>
       <source srcset="'.$receitas[$i]['foto_main'].'" type="image/webp">
-      <img src="'.$receitas[$i]['foto_main'].'" alt="Receita de Arroz colorido simples">
+      <img src="'.$receitas[$i]['foto_main'].'" alt="'.$receitas[$i]['Nome Receita'].'">
       </picture>
       <div class="MiniCategoria"><i class="fa-solid fa-wheat"></i>'.$nameCat.'</div>
       <a href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nameCat='.$nameCat.'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>

@@ -115,21 +115,43 @@ $dificuldades = getDificuldades();
     echo '<img src="'.$receitas[$idReceita]['foto_main'].'">';
     echo '<p>'.$receitas[$idReceita]['Descrição'].'</p>';
     echo '<div>
-          <p><i class="fa-solid fa-users"></i>'.' '.$receitas[$idReceita]['Número de pessoas'].' '.'Convidados</p>
-          <p><i class="fa-regular fa-clock"></i>'.' '.$tempos[$tempo].' '.'</p>
-          <p><i class="fa-solid fa-layer-group"></i>'.' '.$dificuldades[$dificuldade].' '.'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente1'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente2'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente3'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente4'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente5'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente6'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente7'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente8'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente9'].'</p>
-          <p><i class="fa-regular fa-square"></i>'.' '.$receitas[$idReceita]['ingrediente10'].'</p>
+          <p>'.' '.$receitas[$idReceita]['Número de pessoas'].' '.'Convidados</p>
+          <p>'.' '.$tempos[$tempo].' '.'</p>
+          <p>Dificuldade '.' '.$dificuldades[$dificuldade].' '.'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente1'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente2'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente3'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente4'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente5'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente6'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente7'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente8'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente9'].'</p>
+          <p>'.' '.$receitas[$idReceita]['ingrediente10'].'</p>
           </div>';
-    echo '<h2>Como fazer '.$receitas[$idReceita]['Nome Receita'].'</h2>'
+    echo '<h2>Como fazer '.$receitas[$idReceita]['Nome Receita'].'</h2>';
+    echo '<p>1 '.' '.$receitas[$idReceita]['preparação1'].'</p>
+          <img src="'.$receitas[$idReceita]['foto1'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>2 '.' '.$receitas[$idReceita]['preparação2'].'</p>
+          <img src="'.$receitas[$idReceita]['foto2'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>3 '.' '.$receitas[$idReceita]['preparação3'].'</p>
+          <img src="'.$receitas[$idReceita]['foto3'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>4 '.' '.$receitas[$idReceita]['preparação4'].'</p>
+          <img src="'.$receitas[$idReceita]['foto4'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>5 '.' '.$receitas[$idReceita]['preparação5'].'</p>
+          <img src="'.$receitas[$idReceita]['foto5'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>6 '.' '.$receitas[$idReceita]['preparação6'].'</p>
+          <img src="'.$receitas[$idReceita]['foto6'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>7 '.' '.$receitas[$idReceita]['preparação7'].'</p>
+          <img src="'.$receitas[$idReceita]['foto7'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>8 '.' '.$receitas[$idReceita]['preparação8'].'</p>
+          <img src="'.$receitas[$idReceita]['foto8'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>9 '.' '.$receitas[$idReceita]['preparação9'].'</p>
+          <img src="'.$receitas[$idReceita]['foto9'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>10 '.' '.$receitas[$idReceita]['preparação10'].'</p>
+          <img src="'.$receitas[$idReceita]['foto10'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+    echo '<p>11 '.' '.$receitas[$idReceita]['preparação11'].'</p>
+          <img src="'.$receitas[$idReceita]['foto11'].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
     
 
 ?>

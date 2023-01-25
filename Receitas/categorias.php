@@ -104,7 +104,7 @@ $receitas = getReceitas();
       <img src="'.$receitas[$i]['foto_main'].'" alt="Receita de Arroz colorido simples">
       </picture>
       <div class="MiniCategoria"><i class="fa-solid fa-plate-wheat"></i>'.$receitas[$i]['id_categoria'].'</div>
-      <a href="" >'.$receitas[$i]['Nome Receita'].'</a>
+      <a href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nameCat='.$nameCat.'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
       </div>';
   }
   
