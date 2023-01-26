@@ -22,7 +22,6 @@
     
 <div class="navbar">
         <a href="main_Receitas.php">Inicio</a> 
-        <a href="categorias.php">Receitas</a>
         <div class="dropdown">
           <button class="dropbtn">Categorias</button> 
           <div class="dropdown-content">
@@ -84,6 +83,15 @@
             </form>
             </div>
         
+</div>
+
+<h1>Tipo de Receitas</h1>
+<div class="tipo_receitas">
+    <?php
+      for($i=0 ; $i < count($categorias); $i++){
+        echo '<a href="receitas.php?idCat='.$i.'&nameCat='.$categorias[$i]['categoria'].'">'.$categorias[$i]['fa_categoria'].$categorias[$i]['categoria'].'</a>';
+      }
+    ?>
 </div>
 
 <div class="receita">

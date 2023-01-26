@@ -28,8 +28,7 @@ $nameCat = $_GET['nameCat'];
 <body>
     
 <div class="navbar">
-        <a href="/Aulas/Projeto-WEB/Receitas/main_Receitas.php">Inicio</a> 
-        <a href="/Aulas/Projeto-WEB/Receitas/categorias.php">Receitas</a>
+        <a href="main_Receitas.php">Inicio</a> 
         <div class="dropdown">
           <button class="dropbtn">Categorias</button> 
           <div class="dropdown-content">

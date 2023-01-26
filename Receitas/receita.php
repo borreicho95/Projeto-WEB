@@ -36,7 +36,6 @@ $dificuldades = getDificuldades();
     
 <div class="navbar">
         <a href="main_Receitas.php">Inicio</a> 
-        <a href="categorias.php">Receitas</a>
         <div class="dropdown">
           <button class="dropbtn">Categorias</button> 
           <div class="dropdown-content">
