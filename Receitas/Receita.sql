@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `receitas` (
     `preparação10` varchar(300),
     `preparação11` varchar(300),
     `id_categoria` INT(2) NOT NULL,
-    `foto_main` varchar(100) NOT NULL,
+    `foto_main` varchar(120) NOT NULL,
     `foto1` varchar(120) NOT NULL,
     `foto2` varchar(120) NOT NULL,
     `foto3` varchar(120) NOT NULL,
