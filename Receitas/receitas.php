@@ -64,26 +64,6 @@ $nameCat = $_GET['nameCat'];
             </div>
             </div>
             <div class="search-container">
-			<?php
-				if( !empty($username) ) {
-					echo <<<LOGOUT
-						<form action="logout.php">	
-							<strong>$username</strong>
-							<button>Logout</button>
-						</form>		
-					LOGOUT;	
-				}
-				else {
-					echo <<<LOGIN
-						<form action="login.php" method='POST'>	
-							<input type='text' name='username' placeholder='username' />
-							<button>Login</button>
-						</form>		
-					LOGIN;
-				}
-			?>
-		</div>
-            <div class="search-container">
             <form action="">
             <input type="text" placeholder="Procurar.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
@@ -95,16 +75,14 @@ $nameCat = $_GET['nameCat'];
 <div class="receita">
   <h1>A Ver Receitas: <?php echo $nameCat; ?></h1>
   <?php
-
   for($i=0 ; $i < count($receitas); $i++){
     if($receitas[$i]['id_categoria'] == $idCategorias){
-      echo '<div>
+      echo '<div class="receitaContainer">
       <picture>
       <source srcset="'.$receitas[$i]['foto_main'].'" type="image/webp">
       <img src="'.$receitas[$i]['foto_main'].'" alt="'.$receitas[$i]['Nome Receita'].'">
       </picture>
-      <div class="MiniCategoria"><i class="fa-solid fa-wheat"></i>'.$nameCat.'</div>
-      <a href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nameCat='.$nameCat.'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
+      <a id="nomeReceita" href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nameCat='.$nameCat.'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
       </div>';
     }
   }
@@ -113,6 +91,10 @@ $nameCat = $_GET['nameCat'];
   
   ?>
 </div>
+
+<footer class="footer">
+          <p>Trabalho Realizado por: Gabriel Lopes e João Felício</p>
+      </footer>
 
 </body>
 </html>

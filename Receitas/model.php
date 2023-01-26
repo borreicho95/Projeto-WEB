@@ -27,7 +27,7 @@ function getReceitas()
 {
   $conexao = estabelerConexao();
 
-  $stmt = $conexao->query('Select * From receitas');
+  $stmt = $conexao->query('Select * From receitas limit 40');
 
   $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -79,14 +79,13 @@ function getDificuldades()
 /* 
    Verifica se uma receita existe 
 */ 
-function receitaExists( $receita )
+function receitaExists( $search )
 {
     $conexao = estabelerConexao();
-    $stmt = $conexao->prepare("SELECT `Nome Receita` FROM receitas WHERE `Nome Receita`=:`Nome Receita`" );
-    $stmt->execute( [ 'Nome Receita' => $receita ] );
-    $receita = $stmt->fetchColumn();
+    $stmt = $conexao->query("SELECT * FROM receitas WHERE `Nome Receita` Like '%$search%'" );
+    $receita = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    return is_string($receita);
+    return $receita;
 }
 
 /* 

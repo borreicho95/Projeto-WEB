@@ -57,27 +57,9 @@
             </div>
             </div>
             <div class="search-container">
-			<?php
-				if( !empty($username) ) {
-					echo <<<LOGOUT
-						<form action="logout.php">	
-							<strong>$username</strong>
-							<button>Logout</button>
-						</form>		
-					LOGOUT;	
-				}
-				else {
-					echo <<<LOGIN
-						<form action="login.php" method='POST'>	
-							<input type='text' name='username' placeholder='username' />
-							<button>Login</button>
-						</form>		
-					LOGIN;
-				}
-			?>
 		</div>
             <div class="search-container">
-            <form action="">
+            <form action="procurarReceita.php" method="get">
             <input type="text" placeholder="Procurar.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -109,6 +91,10 @@
   
   ?>
 </div>
+
+<footer class="footer">
+          <p>Trabalho Realizado por: Gabriel Lopes e João Felício</p>
+      </footer>
 
 </body>
 </html>
