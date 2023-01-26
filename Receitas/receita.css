@@ -12,3 +12,44 @@ body{
  #desc{
     text-align: justify;
 }
+.tabela1{
+    border-style: solid;
+}
+.tabela1 p{
+    
+    display:inline-block;
+}
+.tabelaingredientes{
+    border-style: solid;
+}
+.tabelaingredientes #linha1{
+    display:inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.tabelaingredientes #linha2{
+    display:inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.tabelaingredientes #linha3{
+    display:inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.tabelaingredientes #linha4{
+    display:inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.tabelaingredientes #linha5{
+    display:inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.break::after{
+    content: "\a";
+}
+
