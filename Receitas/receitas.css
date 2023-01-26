@@ -96,7 +96,7 @@ body{
     }
   
     .footer{
-        display: inline-block;
+        position: fixed;
         background-color: grey;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -246,4 +246,8 @@ a{
 .navbarCat a:hover{
   background-color: #86E5FF;
   
+}
+
+#erro404 {
+text-align: center;
 }

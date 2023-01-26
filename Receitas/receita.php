@@ -70,7 +70,7 @@ $dificuldades = getDificuldades();
             </div>
             </div>
             <div class="search-container">
-            <form action="">
+            <form action="procurarReceita.php">
             <input type="text" placeholder="Procurar.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -243,6 +243,9 @@ $dificuldades = getDificuldades();
 ?>
 </div>
 
+<footer class="footer">
+          <p>Trabalho Realizado por: Gabriel Lopes e João Felício</p>
+      </footer>
 
 </body>
 </html>

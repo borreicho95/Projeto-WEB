@@ -64,7 +64,7 @@ $nameCat = $_GET['nameCat'];
             </div>
             </div>
             <div class="search-container">
-            <form action="">
+            <form action="procurarReceita.php">
             <input type="text" placeholder="Procurar.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
             </form>

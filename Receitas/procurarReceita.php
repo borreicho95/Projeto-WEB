@@ -75,17 +75,27 @@ $receita = receitaExists( $search );
 <div class="receita">
 <?php
 
-  for($i=0 ; $i < count($receita); $i++){
-      echo '<div class="receitaContainer">
-      <picture>
-      <source srcset="'.$receita[$i]['foto_main'].'" type="image/webp">
-      <img src="'.$receita[$i]['foto_main'].'" alt="'.$receita[$i]['Nome Receita'].'">
-      </picture>
-      <a id="nomeReceita" href="receita.php?idReceita='.$receita[$i]['id_receita'].'&idCat='.$receita[$i]['id_categoria'].'&nomeReceita='.$receita[$i]['Nome Receita'].'" >'.$receita[$i]['Nome Receita'].'</a>
-      </div>';
+if(empty($receita)){
+  echo '<p id="erro404">404</p>';
+  echo '<p id="erro404">Página não encontrada</p>';
   }
-  
+else{
+  for($i=0 ; $i < count($receita); $i++){
+    echo '<div class="receitaContainer">
+    <picture>
+    <source srcset="'.$receita[$i]['foto_main'].'" type="image/webp">
+    <img src="'.$receita[$i]['foto_main'].'" alt="'.$receita[$i]['Nome Receita'].'">
+    </picture>
+    <a id="nomeReceita" href="receita.php?idReceita='.$receita[$i]['id_receita'].'&idCat='.$receita[$i]['id_categoria'].'&nomeReceita='.$receita[$i]['Nome Receita'].'" >'.$receita[$i]['Nome Receita'].'</a>
+    </div>';
+  }
+}
   ?>
 </div>
+
+<footer class="footer">
+          <p>Trabalho Realizado por: Gabriel Lopes e João Felício</p>
+      </footer>
+
 </body>
 </html>
