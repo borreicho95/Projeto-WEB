@@ -95,7 +95,6 @@
 <div class="receita">
   <h1>Receitas</h1>
   <?php
-
   for($i=0 ; $i < count($receitas); $i++){
       echo '<div class="receitaContainer">
       <picture>
