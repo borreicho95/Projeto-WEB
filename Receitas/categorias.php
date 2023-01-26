@@ -20,8 +20,8 @@ $receitas = getReceitas();
 <body>
     
 <div class="navbar">
-        <a href="/Aulas/Projeto-WEB/Receitas/main_Receitas.php">Inicio</a> 
-        <a href="/Aulas/Projeto-WEB/Receitas/categorias.php">Receitas</a>
+        <a href="main_Receitas.php">Inicio</a> 
+        <a href="categorias.php">Receitas</a>
         <div class="dropdown">
           <button class="dropbtn">Categorias</button> 
           <div class="dropdown-content">
@@ -102,7 +102,8 @@ $receitas = getReceitas();
       <picture>
       <img src="'.$receitas[$i]['foto_main'].'" alt="Receita de Arroz colorido simples">
       </picture>
-      <div class="MiniCategoria"><i class="fa-solid fa-plate-wheat"></i>'.$receitas[$i]['id_categoria'].'</div>
+      <div class="MiniCategoria">
+      <i class="fa-solid fa-plate-wheat"></i>
       <a href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nameCat='.$categorias[$i]['categoria'].'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
       </div>';
   }
