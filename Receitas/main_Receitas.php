@@ -84,15 +84,13 @@
             </div>
         
 </div>
-
-<h1>Tipo de Receitas</h1>
-<div class="tipo_receitas">
-    <?php
+<div class="navbarCat">
+<?php
       for($i=0 ; $i < count($categorias); $i++){
-        echo '<a href="receitas.php?idCat='.$i.'&nameCat='.$categorias[$i]['categoria'].'">'.$categorias[$i]['fa_categoria'].$categorias[$i]['categoria'].'</a>';
+        echo '<a href="receitas.php?idCat='.$i.'&nameCat='.$categorias[$i]['categoria'].'">'.$categorias[$i]['fa_categoria'].' '.$categorias[$i]['categoria'].'</a>';
       }
     ?>
-</div>
+      </div>
 
 <div class="receita">
   <h1>Receitas</h1>
