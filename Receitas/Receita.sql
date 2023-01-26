@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `receitas` (
     FOREIGN KEY (`id_categoria`) References categorias(`id_categoria`)
 ) ENGINE=InnoDB CHARSET=utf8;
 
-INSERT into `receitas` (`id_receita`,`Nome Receita`,`Nome do utilizador`,`Data`,`Descrição`,`Número de pessoas`,`id_tempo`,`id_dificuldade`,`ingrediente1`,`ingrediente2`,`ingrediente3`,`ingrediente4`,`ingrediente5`,`ingrediente6`,`ingrediente7`,`ingrediente8`,`ingrediente9`,`ingrediente10`,`preparação1`,`preparação2`,`preparação3`,`preparação4`,`preparação5`,`preparação6`,`preparação7`,`preparação8`,`preparação9`,`preparação10`,`id_categoria`,`foto_main`,`foto1`,`foto2`,`foto3`,`foto4`,`foto5`,`foto6`,`foto7`,`foto8`,`foto9`,`foto10`,`foto11`) VALUES
+INSERT into `receitas` (`id_receita`,`Nome Receita`,`Nome do utilizador`,`Data`,`Descrição`,`Número de pessoas`,`id_tempo`,`id_dificuldade`,`ingrediente1`,`ingrediente2`,`ingrediente3`,`ingrediente4`,`ingrediente5`,`ingrediente6`,`ingrediente7`,`ingrediente8`,`ingrediente9`,`ingrediente10`,`preparação1`,`preparação2`,`preparação3`,`preparação4`,`preparação5`,`preparação6`,`preparação7`,`preparação8`,`preparação9`,`preparação10`,`preparação11`,`id_categoria`,`foto_main`,`foto1`,`foto2`,`foto3`,`foto4`,`foto5`,`foto6`,`foto7`,`foto8`,`foto9`,`foto10`,`foto11`) VALUES
 (1,
  'Folhados de salsicha simples',
  'João Felício',
