@@ -89,7 +89,7 @@ $receitas = getReceitas();
 <div class="tipo_receitas">
     <?php
       for($i=0 ; $i < count($categorias); $i++){
-        echo '<a href"">'.$categorias[$i]['fa_categoria'].' '.$categorias[$i]['categoria'].'</a>';
+        echo '<a href="receitas.php?idCat='.$i.'&nameCat='.$categorias[$i]['categoria'].'">'.$categorias[$i]['fa_categoria'].$categorias[$i]['categoria'].'</a>';
       }
     ?>
 </div>

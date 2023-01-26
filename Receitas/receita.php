@@ -114,9 +114,9 @@ $dificuldades = getDificuldades();
     echo '<img src="'.$receitas[$idReceita-1]['foto_main'].'">';
     echo '<p>'.$receitas[$idReceita-1]['Descrição'].'</p>';
     echo '<div>
-          <p>'.' '.$receitas[$idReceita-1]['Número de pessoas'].' '.'Convidados</p>
-          <p>'.' '.$tempos[$tempo].' '.'</p>
-          <p>Dificuldade '.' '.$dificuldades[$dificuldade].' '.'</p>
+          <p><i class="fa-solid fa-users"></i>'.' '.$receitas[$idReceita-1]['Número de pessoas'].' '.'Convidados</p>
+          <p><i class="fa-regular fa-clock"></i>'.' '.$tempos[$tempo].' '.'</p>
+          <p><i class="fa-solid fa-layer-group"></i> Dificuldade '.' '.$dificuldades[$dificuldade].' '.'</p>
           </div>';
     echo '<div>';
     
