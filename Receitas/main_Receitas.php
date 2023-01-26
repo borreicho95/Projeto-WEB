@@ -99,12 +99,12 @@
   <?php
 
   for($i=0 ; $i < count($receitas); $i++){
-      echo '<div>
+      echo '<div class="receitaContainer">
       <picture>
       <source srcset="'.$receitas[$i]['foto_main'].'" type="image/webp">
       <img src="'.$receitas[$i]['foto_main'].'" alt="'.$receitas[$i]['Nome Receita'].'">
       </picture>
-      <a href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
+      <a id="nomeReceita" href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
       </div>';
   }
   
