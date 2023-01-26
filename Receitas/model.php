@@ -77,6 +77,19 @@ function getDificuldades()
 }
 
 /* 
+   Verifica se uma receita existe 
+*/ 
+function receitaExists( $receita )
+{
+    $conexao = estabelerConexao();
+    $stmt = $conexao->prepare("SELECT `Nome Receita` FROM receitas WHERE `Nome Receita`=:`Nome Receita`" );
+    $stmt->execute( [ 'Nome Receita' => $receita ] );
+    $receita = $stmt->fetchColumn();
+
+    return is_string($receita);
+}
+
+/* 
    Verifica se um dado username existe 
 */ 
 function usernameExists( $username )

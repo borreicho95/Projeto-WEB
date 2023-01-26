@@ -3,6 +3,9 @@
   require ('model.php');
 
   $categorias = getCategorias();
+
+  $receitas = getReceitas();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,11 +86,24 @@
         
 </div>
 
-<?php
+<div class="receita">
+  <h1>Receitas</h1>
+  <?php
 
-
-
-?>
+  for($i=0 ; $i < count($receitas); $i++){
+      echo '<div>
+      <picture>
+      <source srcset="'.$receitas[$i]['foto_main'].'" type="image/webp">
+      <img src="'.$receitas[$i]['foto_main'].'" alt="'.$receitas[$i]['Nome Receita'].'">
+      </picture>
+      <a href="receita.php?idReceita='.$receitas[$i]['id_receita'].'&idCat='.$receitas[$i]['id_categoria'].'&nomeReceita='.$receitas[$i]['Nome Receita'].'" >'.$receitas[$i]['Nome Receita'].'</a>
+      </div>';
+  }
+  
+  
+  
+  ?>
+</div>
 
 </body>
 </html>
