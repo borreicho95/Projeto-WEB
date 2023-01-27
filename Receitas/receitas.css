@@ -96,7 +96,6 @@ body{
     }
   
     .footer{
-        position: fixed;
         background-color: grey;
         padding-top: 20px;
         padding-bottom: 20px;

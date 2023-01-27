@@ -104,60 +104,65 @@ $dificuldades = getDificuldades();
            
     }else{
       echo '<p id="linha1">'.' '.$receitas[$idReceita-1]['ingrediente1'].'</p>';
-      echo '<p id="linha1">|</p>';
+      echo '<p id="linhaV">|</p>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente2'])){
            
     }else{
       echo '<p id="linha1">'.' '.$receitas[$idReceita-1]['ingrediente2'].'</p>';
+      echo '<p id="linhaV">|</p>';
       echo '<div class="break"></div>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente3'])){
            
     }else{
       echo '<p id="linha2">'.' '.$receitas[$idReceita-1]['ingrediente3'].'</p>';
-      echo '<p id="linha1">|</p>';
+      echo '<p id="linhaV">|</p>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente4'])){
            
     }else{
       echo '<p id="linha2">'.' '.$receitas[$idReceita-1]['ingrediente4'].'</p>';
+      echo '<p id="linhaV">|</p>';
       echo '<div class="break"></div>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente5'])){
            
     }else{
       echo '<p id="linha3">'.' '.$receitas[$idReceita-1]['ingrediente5'].'</p>';
-      echo '<p id="linha1">|</p>';
+      echo '<p id="linhaV">|</p>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente6'])){
            
     }else{
       echo '<p id="linha3">'.' '.$receitas[$idReceita-1]['ingrediente6'].'</p>';
+      echo '<p id="linhaV">|</p>';
       echo '<div class="break"></div>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente7'])){
            
     }else{
       echo '<p id="linha4">'.' '.$receitas[$idReceita-1]['ingrediente7'].'</p>';
-      echo '<p id="linha1">|</p>';
+      echo '<p id="linhaV">|</p>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente8'])){
            
     }else{
       echo '<p id="linha4">'.' '.$receitas[$idReceita-1]['ingrediente8'].'</p>';
+      echo '<p id="linhaV">|</p>';
       echo '<div class="break"></div>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente9'])){
            
     }else{
       echo '<p id="linha5">'.' '.$receitas[$idReceita-1]['ingrediente9'].'</p>';
-      echo '<p id="linha1">|</p>';
+      echo '<p id="linhaV">|</p>';
     }
     if(empty($receitas[$idReceita-1]['ingrediente10'])){
            
     }else{
       echo '<p id="linha5">'.' '.$receitas[$idReceita-1]['ingrediente10'].'</p>';
+      echo '<p id="linhaV">|</p>';
       echo '<div class="break"></div>';
     }
     echo '</div>';
