@@ -9,6 +9,6 @@ CREATE TABLE IF NOT EXISTS `dificuldade` (
 -- Inserção de registos de Utilizadores
 --
 INSERT INTO `dificuldade`(`id_dificuldade`, `nivel`) VALUES
-(1, 'baixa'),
-(2, 'média'),
-(3, 'alta');
+(0, 'baixa'),
+(1, 'média'),
+(2, 'alta');

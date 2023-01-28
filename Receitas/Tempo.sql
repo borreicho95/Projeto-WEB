@@ -9,11 +9,13 @@ CREATE TABLE IF NOT EXISTS `tempo` (
 -- Inserção de registos de Utilizadores
 --
 INSERT INTO `tempo`(`id_tempo`, `time`) VALUES
-(1, '15m'),
-(2, '30m'),
-(3, '45m'),
-(4, '1h'),
-(5, '1h15m'),
-(6, '1h30m'),
-(7, '1h45m'),
-(8, '2h');
+(0, '15m'),
+(1, '30m'),
+(2, '45m'),
+(3, '1h'),
+(4, '1h15m'),
+(5, '1h30m'),
+(6, '1h45m'),
+(7, '2h'),
+(8, '2h15m'),
+(9, '2h30m');
