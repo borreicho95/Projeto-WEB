@@ -80,19 +80,19 @@ $dificuldades = getDificuldades();
 
 <div class="paginaReceita">
 <?php
-    $tempo = $receitas[$idReceita-1]['id_tempo'];
+    $tempo = $receitas[$idReceita]['id_tempo'];
 
-    $dificuldade = $receitas[$idReceita-1]['id_dificuldade'];
+    $dificuldade = $receitas[$idReceita]['id_dificuldade'];
 
-    echo '<h1>Receita de '.$receitas[$idReceita-1]['Nome Receita'].'</h1>';
+    echo '<h1>Receita de '.$receitas[$idReceita]['Nome Receita'].'</h1>';
     echo '<div>
-          <h3>'.$receitas[$idReceita-1]['Nome do utilizador'].'</h3>
-          <h4>'.$receitas[$idReceita-1]['Data'].'</h4>
+          <h3>'.$receitas[$idReceita]['Nome do utilizador'].'</h3>
+          <h4>'.$receitas[$idReceita]['Data'].'</h4>
           </div>';
-    echo '<img src="'.$receitas[$idReceita-1]['foto_main'].'">';
-    echo '<p id="desc">'.$receitas[$idReceita-1]['Descrição'].'</p>';
+    echo '<img src="'.$receitas[$idReceita]['foto_main'].'">';
+    echo '<p id="desc">'.$receitas[$idReceita]['Descrição'].'</p>';
     echo '<div class="tabela1">
-          <p><i class="fa-solid fa-users"></i>'.' '.$receitas[$idReceita-1]['Número de pessoas'].' '.'Convidados</p>
+          <p><i class="fa-solid fa-users"></i>'.' '.$receitas[$idReceita]['Número de pessoas'].' '.'Convidados</p>
           <p>|</p>
           <p><i class="fa-regular fa-clock"></i>'.' '.$tempos[$tempo].' '.'</p>
           <p>|</p>
@@ -100,151 +100,38 @@ $dificuldades = getDificuldades();
           </div>';
     echo '<div class="tabelaingredientes">';
     
-    if(empty($receitas[$idReceita-1]['ingrediente1'])){
+    for($i = 1; $i < 10; $i++){
+      if(empty($receitas[$idReceita]['ingrediente'.$i])){
            
-    }else{
-      echo '<p id="linha1">'.' '.$receitas[$idReceita-1]['ingrediente1'].'</p>';
-      echo '<p id="linhaV">|</p>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente2'])){
-           
-    }else{
-      echo '<p id="linha1">'.' '.$receitas[$idReceita-1]['ingrediente2'].'</p>';
-      echo '<p id="linhaV">|</p>';
-      echo '<div class="break"></div>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente3'])){
-           
-    }else{
-      echo '<p id="linha2">'.' '.$receitas[$idReceita-1]['ingrediente3'].'</p>';
-      echo '<p id="linhaV">|</p>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente4'])){
-           
-    }else{
-      echo '<p id="linha2">'.' '.$receitas[$idReceita-1]['ingrediente4'].'</p>';
-      echo '<p id="linhaV">|</p>';
-      echo '<div class="break"></div>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente5'])){
-           
-    }else{
-      echo '<p id="linha3">'.' '.$receitas[$idReceita-1]['ingrediente5'].'</p>';
-      echo '<p id="linhaV">|</p>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente6'])){
-           
-    }else{
-      echo '<p id="linha3">'.' '.$receitas[$idReceita-1]['ingrediente6'].'</p>';
-      echo '<p id="linhaV">|</p>';
-      echo '<div class="break"></div>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente7'])){
-           
-    }else{
-      echo '<p id="linha4">'.' '.$receitas[$idReceita-1]['ingrediente7'].'</p>';
-      echo '<p id="linhaV">|</p>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente8'])){
-           
-    }else{
-      echo '<p id="linha4">'.' '.$receitas[$idReceita-1]['ingrediente8'].'</p>';
-      echo '<p id="linhaV">|</p>';
-      echo '<div class="break"></div>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente9'])){
-           
-    }else{
-      echo '<p id="linha5">'.' '.$receitas[$idReceita-1]['ingrediente9'].'</p>';
-      echo '<p id="linhaV">|</p>';
-    }
-    if(empty($receitas[$idReceita-1]['ingrediente10'])){
-           
-    }else{
-      echo '<p id="linha5">'.' '.$receitas[$idReceita-1]['ingrediente10'].'</p>';
-      echo '<p id="linhaV">|</p>';
-      echo '<div class="break"></div>';
-    }
-    echo '</div>';
-    echo '<h2>Como fazer '.$receitas[$idReceita-1]['Nome Receita'].'</h2>';
-    if (empty($receitas[$idReceita-1]['preparação1'])) {
-      
-    } else {
-      echo '<h3>Passo 1</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação1'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto1'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita-1]['preparação2'])) {
-      
-    } else {
-      echo '<h3>Passo 2</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação2'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto2'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita]['preparação3'])) {
-      
-    } else {
-      echo '<h3>Passo 3</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação3'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto3'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita]['preparação4'])) {
-      
-    } else {
-      echo '<h3>Passo 4</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação4'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto4'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita-1]['preparação5'])) {
-      
-    } else {
-      echo '<h3>Passo 5</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação5'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto5'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita-1]['preparação6'])) {
-      
-    } else {
-      echo '<h3>Passo 6</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação6'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto6'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita-1]['preparação7'])) {
-      
-    } else {
-      echo '<h3>Passo 7</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação7'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto7'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita-1]['preparação8'])) {
-      
-    } else {
-      echo '<h3>Passo 8</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação8'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto8'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita-1]['preparação9'])) {
-      
-    } else {
-      echo '<h3>Passo 9</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação9'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto9'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }if (empty($receitas[$idReceita-1]['preparação11'])) {
-      
-    } else {
-      echo '<h3>Passo 10</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação10'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto10'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
-    if (empty($receitas[$idReceita-1]['preparação11'])) {
-      
-    } else {
-      echo '<h3>Passo 11</h3>';
-      echo '<p> '.' '.$receitas[$idReceita-1]['preparação11'].'</p>
-          <img src="'.$receitas[$idReceita-1]['foto11'].'" alt="'.$receitas[$idReceita-1]['Nome Receita'].'">';
-    }
+      }else{
+        echo '<p id="linha1">'.' '.$receitas[$idReceita]['ingrediente'.$i].'</p>';
+        echo '<p id="linhaV">|</p>';
+      }
+  }
     
+    echo '</div>';
+    echo '<h2>Como fazer '.$receitas[$idReceita]['Nome Receita'].'</h2>';
+    
+    for($i=1; $i < 12; $i++){
+      if (empty($receitas[$idReceita]['preparação'.$i]) && empty($receitas[$idReceita]['foto'.$i])) {
 
+      
+      } elseif (empty($receitas[$idReceita]['preparação'.$i])) {
+  
+        echo '<img src="'.$receitas[$idReceita]['foto'.$i].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+  
+      } elseif (empty($receitas[$idReceita]['foto'.$i])) {
+  
+        echo '<h3>Passo '.$i.'</h3>';
+        echo '<p> '.' '.$receitas[$idReceita]['preparação'.$i].'</p>';
+  
+      } else {
+        echo '<h3>Passo '.$i.'</h3>';
+        echo '<p> '.' '.$receitas[$idReceita]['preparação'.$i].'</p>
+            <img src="'.$receitas[$idReceita]['foto'.$i].'" alt="'.$receitas[$idReceita]['Nome Receita'].'">';
+      }
+  
+    }
 ?>
 </div>
 
