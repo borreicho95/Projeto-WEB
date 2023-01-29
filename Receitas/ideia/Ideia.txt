@@ -18,5 +18,15 @@ A pagina inicial contem ainda um submenu para mostrar as categorias por motivos 
 
 -- Incompleto
 Número de receitas (atualmente) serve apenas para demonstrar o site.
+Retiradas do TudoReceitas
 
+--Receitas completas
+Pão e Bolos
+Molhos e acompanhados
+Aperitivos e petiscos
 
+--Receitas semi-completas
+Carnes
+
+-- Receitas Incompletas
+Resto
