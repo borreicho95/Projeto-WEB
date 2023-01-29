@@ -27,11 +27,22 @@ function getReceitas()
 {
   $conexao = estabelerConexao();
 
-  $stmt = $conexao->query('Select * From receitas limit 40');
+  $stmt = $conexao->query('Select * From receitas');
 
   $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   return $receitas;
+}
+
+function getReceitasLimit()
+{
+  $conexao = estabelerConexao();
+
+  $stmt = $conexao->query('Select * From receitas limit 40');
+
+  $receitaslimit = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+  return $receitaslimit;
 }
 
 /*
