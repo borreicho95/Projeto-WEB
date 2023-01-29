@@ -26,5 +26,5 @@ INSERT INTO `categorias`(`id_categoria`, `categoria`, `fa_categoria`) VALUES
 (13, 'Aperitivos e pestiscos', '<i class="fa-solid fa-stroopwafel"></i>'),
 (14, 'Molhos e acompanhamentos', '<i class="fa-solid fa-wine-bottle"></i>'),
 (15, 'Coquetéis e bebidas', '<i class="fa-solid fa-champagne-glasses"></i>'),
-(16, 'Comida de panela', '<i class="fa-solid fa-bowl-food"></i>'),
-(17, 'Conselhos de cozinha', '<i class="fa-solid fa-utensils"></i>');
+(16, 'Comida de panela', '<i class="fa-solid fa-bowl-food"></i>');
+
