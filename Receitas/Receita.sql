@@ -1342,7 +1342,7 @@ CURRENT_TIMESTAMP,
  '',
  '',
  '',
- '')
+ ''),
 
  (30,
  'Maminha assada no forno suculenta',
