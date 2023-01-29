@@ -1,16 +1,22 @@
-A página principal tem um menu, este menu pode ter no lado esquerdo dois botões ( Menu , Categorias(Menu dropdown) )
-                                                                    uma imagem clicavel que leva para menu, esta é p logo
-                                                                    uma barra de pesquisa
-                                                   no lado direito ira ter o username, caso nao haja vai ter o login
+A página principal tem um menu, este menu pode ter no lado esquerdo dois botões ( Menu , Categorias(Menu dropdown) ) -- Completo
+                                                                    uma imagem clicavel que leva para menu, esta é p logo -- Não feotp
+                                                                    uma barra de pesquisa -- Completo
+                                                                    no lado direito ira ter o username, caso nao haja vai ter o login -- Descartado por mudanças no site
 
 
+Todos os ficheiros.sql estão no trabalho uma vez que facilita o seu uso.
 
-
-O login é uma pagina à parte em que se tem acesso ao login mas tbm tem um link para se resgistar.    
+-- Descartado 
+O login é uma pagina à parte em que se tem acesso ao login mas tbm tem um link para se resgistar.   
 O estilo da página pode ter uma barra de menu no topo e a o que ira ser apresentado é o logo e o form de login lado a lado com uma linha leve a separar 
-
 A página de resgisto irá ser igual à de login.
 
+-- Aplicado
+Menu com a pagina inicial, um menu dropdown que mostra as categorias dinamicamente e que sera usado para navegar pelo site.
+Tem ainda um sistema de barra de procura caso o utilizador queira procurar pelo nome.
+A pagina inicial contem ainda um submenu para mostrar as categorias por motivos de estetica e de facilidade na navegação do site.
 
+-- Incompleto
+Número de receitas (atualmente) serve apenas para demonstrar o site.
 
 
