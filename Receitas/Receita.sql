@@ -1,7 +1,7 @@
 --   Criar a Tabela `receitas`
 CREATE TABLE IF NOT EXISTS `receitas` (
     `id_receita` INT(5) NOT NULL,
-    `Nome Receita` varchar(60) NOT NULL,
+    `Nome Receita` varchar(80) NOT NULL,
     `Nome do utilizador` varchar(20) NOT NULL,
     `Data` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `Descrição` varchar(1000) NOT NULL,
