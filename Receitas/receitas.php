@@ -92,7 +92,7 @@ $nameCat = $_GET['nameCat'];
   ?>
 </div>
 
-<footer class="footer">
+<footer class="footerFixed">
           <p>Trabalho Realizado por: Gabriel Lopes e João Felício</p>
       </footer>
 
