@@ -52,7 +52,7 @@ $receita = receitaExists( $search );
             <div class="column">
             <?php
               
-              for($i=12; $i < 18; $i++) {
+              for($i=12; $i < 17; $i++) {
                 echo '<a href="receitas.php?idCat='.$i.'&nameCat='.$categorias[$i]['categoria'].'">'.$categorias[$i]['categoria'].'</a>';
             }
             
